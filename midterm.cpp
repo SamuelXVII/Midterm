@@ -7,12 +7,14 @@ using namespace std; //lets you use cin & cout
 void calculateArea();
 void isPrime();
 void part3();
+void switchCase();
 
 
 int main () { //Main function
 //calculateArea();
 //isPrime();
-part3();
+//part3();
+switchCase();
 return 0;
 }
 
@@ -49,4 +51,47 @@ cout << "What's your favorite number? ";
 cin >> num;
 cout << "So your name is "<< n<< ", your "<< a<< " years old \n";
 cout << "and your favorite number is " << num<< ".\n";
+}
+
+void switchCase() {
+    int calc;
+    float num1, num2;
+    cout << "Add, Sub, Mult, Div are each assigned a number 1 to 4, Ex: 2 is Subtraction\n";
+    cin >> calc;
+
+    switch (calc) {
+        case 1:
+        cout << "What would you like to add \n";
+        cin >> num1;
+        cout << "What number will you add to it ";
+        cin >> num2;
+        cout << "Result is "<< num1 + num2 << ".\n";
+        break;
+
+        case 2:
+        cout << "What would you like to subtract \n";
+        cin >> num1;
+        cout << "What number will you subtract it by ";
+        cin >> num2;
+        cout << "Result is "<< num1 - num2 << ".\n";
+        break;
+
+        case 3:
+        cout << "What would you like to multiply \n";
+        cin >> num1;
+        cout << "What number will you multiply it by ";
+        cin >> num2;
+        cout << "Result is "<< num1 * num2 << ".\n";
+        break;
+        
+        case 4:
+        cout << "What would you like to divide \n";
+        cin >> num1;
+        cout << "What number will you divide it by ";
+        cin >> num2;
+        cout << "Result is "<< num1 / num2 << ".\n";
+        break;
+
+    }
+
 }
